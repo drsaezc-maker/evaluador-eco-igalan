@@ -1,0 +1,16 @@
+{
+  "name": "Evaluador de Alumnos — Ecocardiografía Crítica",
+  "short_name": "Evaluador ECO",
+  "description": "Registro y evaluación de competencias en ecocardiografía crítica.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f1f5f9",
+  "theme_color": "#0f172a",
+  "lang": "es",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

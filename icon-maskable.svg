@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Evaluador ECO">
+  <rect width="512" height="512" fill="#0f172a"/>
+  <g transform="translate(0,8)">
+    <path d="M256 150 L176 350 A100 100 0 0 0 336 350 Z" fill="#134e4a" stroke="#14b8a6" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M180 300 H222 L240 262 L266 336 L290 280 L306 300 H332" fill="none" stroke="#5eead4" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="256" cy="140" r="16" fill="#2dd4bf"/>
+</svg>
