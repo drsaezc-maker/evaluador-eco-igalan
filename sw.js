@@ -1,6 +1,4 @@
-// Service worker mínimo para uso offline (app shell).
-// Estrategia: network-first para navegación, cache-first para assets.
-const CACHE = 'ecoeval-v2-1';
+const CACHE = 'ecoeval-v2-2';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', (e) => {
@@ -16,7 +14,6 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
-  // Assets con hash (js/css) → cache-first
   if (/\.(js|css|svg|png|woff2?)$/.test(new URL(req.url).pathname)) {
     e.respondWith(
       caches.match(req).then((hit) => hit || fetch(req).then((res) => {
@@ -27,7 +24,6 @@ self.addEventListener('fetch', (e) => {
     );
     return;
   }
-  // Navegación → network-first con fallback a cache
   e.respondWith(
     fetch(req)
       .then((res) => {
